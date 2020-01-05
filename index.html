@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TO DO LIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet"/>
+  </head>
+<body>
+    <div id="mainDiv">
+        <h4>Sample board</h4>
+        <button type="button" class="add-btn list-btn createBtn" data-id="mainDiv">Add new List...</button>
+    </div>
+    <div id="main-popup" class="popup">
+      <div class="page-hide listpopup">
+            <div class="pop-head">Add New List</div>
+            <div class="pop-body">
+              <div class="inputtext">
+                <label for="listbox" class="inputlabel">List Name </label>
+                <input type="text" id="listbox"  placeholder="Enter list name..."/>
+            </div>
+            </div>
+            <button type="button" class="add-btn" id="createList">Add</button>
+            <button type="button" class="cancel-btn" id="cancelList">Cancel</button>
+      </div>  
+      <div class="page-hide card-popup">
+        <div class="pop-head">Add New Card</div>
+        <div class="pop-body">
+          <div class="inputtext">
+            <label for="cardbox" class="inputlabel">Name </label>
+            <input type="text" id="cardbox" placeholder="Enter card name..."/>
+          </div>    
+          <div class="inputtext">
+            <label for="cardboxdesc" class="inputlabel">Description </label>
+            <input type="text" id="cardboxdesc" placeholder="card desc..."/>
+          </div>
+          <button type="button" class="add-btn" id="createCard">Add</button>
+          <button type="button" class="cancel-btn" id="cancelCard">Cancel</button>
+        </div>    
+    </div>
+    </div>
+    <div id="sec-popup" class="popup">
+      <div class="page-hide card-popup">
+      <div class="inputtext">
+          <label for="cardTitleBox" class="inputlabel">Card Name </label>
+          <input type="text" id="cardTitleBox"/>
+        </div>
+        <div class="inputtext">
+            <label for="cardDescBox" class="inputlabel">Description</label>
+            <input type="textarea" id="cardDescBox"/>
+        </div>
+      </div>
+        <label for="commentarea" class="inputlabel">Description</label>
+        <input type="textarea" id="commentarea" placeholder="Start typing comment here..."/>
+        <button type="button" id="addComment" class="add-btn">Add Comment</button>
+        <div id="commentShow">
+        </div>   
+        <button type="button" id="updateCard" class="add-btn ">Update</button>
+        <button type="button" class="cancel-btn" id="cancelupdate">Cancel</button>
+      <div class="page-hide list-popup">
+        <input type="text" id="TitleBox"/>
+        <button type="button" id="updateList">Update</button>
+      </div> 
+    </div>
+  </div>
+  <div id="fade"></div>
+  <script src="./js/main.js" ></script>
+  <script src="./js/listener.js" ></script>
+</body>
+<html>
